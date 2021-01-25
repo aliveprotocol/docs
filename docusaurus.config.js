@@ -1,18 +1,16 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Alive',
+  tagline: 'Decentralized live streaming protocol on IPFS and Skynet',
+  url: 'https://aliveprotocol.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/favicon.png',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Alive',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Alive Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -24,7 +22,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/aliveprotocol',
           label: 'GitHub',
           position: 'right',
         },
@@ -50,18 +48,18 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Hive',
+              href: 'https://peakd.com/@aliveprotocol',
+            },
+            {
+              label: 'DTube',
+              href: 'https://d.tube/#!/c/aliveprotocol',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
+              href: 'https://discord.gg/Sc4utKr',
+            }
+          ]
         },
         {
           title: 'More',
@@ -72,12 +70,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/aliveprotocol',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Alive Protocol and its contributors. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -88,13 +86,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/aliveprotocol/docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/aliveprotocol/docs/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
