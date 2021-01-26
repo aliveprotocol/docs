@@ -1,5 +1,6 @@
 module.exports = {
   someSidebar: {
-    "Alive Protocol": ['introduction']
+    "Alive Protocol": ['introduction','howitworks','getstarted'],
+    "For Streamers": ['modes']
   }
 }
