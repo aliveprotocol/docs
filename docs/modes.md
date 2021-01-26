@@ -44,3 +44,7 @@ Hive: 870 HP
 Best for continous (24/7) streams that do **not** need immutable live streams. This mode is currently unavailable and is being worked on.
 
 Off-chain only streams do not publish any stream .ts hashes to the blockchain, hence the only on-chain transactions made are stream creation, stream metadata updates and finalizing the stream. Unlike stream modes that publishes the stream .ts hashes on-chain, off-chain only streams do not have a playable stream archive after the livestream.
+
+### Disclaimer
+
+All requirements stated above are estimates at time of writing this page with the assumption of only source resolution being streamed as well as having short usernames and permlinks. The stake requirements may change from time to time as Hive RC pools vary daily and Avalon bandwidth recharge rate might be adjusted by leaders in the future.
