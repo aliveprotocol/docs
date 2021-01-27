@@ -1,6 +1,6 @@
-# Website
+# Alive Docs
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+Landing page and documentation of Alive Protocol. Created using [Docusaurus 2](https://v2.docusaurus.io).
 
 ## Installation
 
