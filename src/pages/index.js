@@ -8,36 +8,71 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Stream the way you want',
+    imageUrl: 'img/undraw_choose.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Alive is built as a live streaming protocol that is actually decentralized which
+        any video DApp can take advantage of. Choose your favorite DApp and file sharing
+        protocol to stream to.
       </>
-    ),
+    )
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Communicate freely',
+    imageUrl: 'img/undraw_video_influencer.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Stream your content and interact with your viewers without worrying about
+        arbitrary censorship as Alive does not the authority to ban anyone on the
+        immutable blockchains.
       </>
-    ),
+    )
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Highly scalable',
+    imageUrl: 'img/undraw_connected_world.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Alive is not limited to the scalability of a single blockchain as it is designed
+        to be built on multiple blockchains. Your video streams are spread out across
+        different IPFS/Skynet nodes around the world too.
       </>
-    ),
+    )
   },
-];
+  {
+    title: 'Instant stream archive availability',
+    imageUrl: 'img/undraw_video_streaming.svg',
+    description: (
+      <>
+        Just missed a stream from your favourite streamers? Stream archives of ended on-chain
+        Alive streams are made available instantly so that you can watch it immediately.
+      </>
+    )
+  },
+  {
+    title: 'Moderate your own chat',
+    imageUrl: 'img/undraw_manage_chats.svg',
+    description: (
+      <>
+        The decentralization of Alive extends to live chat such that streamers and
+        streamer-approved moderators are the ones that have moderation powers to keep
+        the chat clean.
+      </>
+    )
+  },
+  {
+    title: 'Developer friendly',
+    imageUrl: 'img/undraw_code_inspection.svg',
+    description: (
+      <>
+        Alive uses HLS to deliver streams, the industry leading communication protocol
+        used by many video players. All it takes to deliver Alive streams is just using
+        m3u8 playlists provided by Alive-enabled API nodes.
+      </>
+    )
+  }
+]
 
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
