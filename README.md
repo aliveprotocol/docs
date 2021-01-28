@@ -2,6 +2,8 @@
 
 Landing page and documentation of Alive Protocol. Created using [Docusaurus 2](https://v2.docusaurus.io).
 
+Production website is reachable at https://aliveprotocol.com.
+
 ## Installation
 
 ```console
@@ -26,8 +28,17 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
+### Using [ipfs-deploy](https://github.com/ipfs-shipyard/ipfs-deploy):
 ```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+ipd build/
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### Using [Fleek](https://fleek.co):
+
+Build command: `yarn install; yarn build`
+Publish directory: `build`
+
+Docusaurus does not support hash routing, hence it is required to access the webpage with base32 CID v1 hash on a subdomain. To convert CID v0 hashes:
+```console
+ipfs cid base32 <cid>
+```
