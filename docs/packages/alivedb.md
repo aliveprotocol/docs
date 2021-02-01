@@ -11,6 +11,10 @@ This package provides the core implementation of the database schematics of Aliv
 
 Most applications should only use a reduced implementation of [alivedb.js](https://github.com/aliveprotocol/AliveDB/blob/master/src/alivedb.js).
 
+## Dependencies
+
+NodeJS and npm are needed which can be installed [here](https://nodejs.org/en/download).
+
 ## Installation
 
 ### Standalone installation
