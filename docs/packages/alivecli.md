@@ -76,7 +76,7 @@ python3 stream_configure.py dtc <avalon_api_node> <link> <alivedb_pubkey> <usern
 python3 stream_configure.py hive <hive_api_node> <link> <alivedb_pubkey> <username> <posting_key>
 ```
 
-3. Setup OBS recording output settings according to the config [below](obs-recording-output-config).
+3. Setup OBS recording output settings according to the config [below](#obs-recording-output-config).
 
 4. Start the Alive daemon. To get CLI usage info:
 ```
