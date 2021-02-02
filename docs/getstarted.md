@@ -4,7 +4,9 @@ title: Get Started
 ---
 
 :::note
+
 The information contained in this page is incomplete and will be updated as development progresses.
+
 :::
 
 You can stream through Alive using CLI during the testing phrase as the UI for streamers is currently being developed. If you wish to perticipate in the early testing, please contact `techcoderx#7481` on Discord for further information.

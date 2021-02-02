@@ -5,7 +5,9 @@ slug: /
 ---
 
 :::caution
+
 Alive is currently **pre-alpha**, hence any part of the specifications or the documentation may change significantly.
+
 :::
 
 ## Hello World!

@@ -6,6 +6,10 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
   themeConfig: {
     navbar: {
       title: 'Alive',
@@ -20,7 +24,21 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'blog',
+          label: 'Blog',
+          position: 'left'
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+          dropdownItemsBefore: [],
+          dropdownItemsAfter: [{
+            to: 'https://crowdin.com/project/alivedocs',
+            label: 'Help Us Translate'
+          }],
+          className: 'default'
+        },
         {
           href: 'https://github.com/aliveprotocol',
           label: 'GitHub',

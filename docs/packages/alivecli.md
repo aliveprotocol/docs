@@ -104,7 +104,9 @@ python3 stream_end.py hive <hive_api_node> <link> <username> <posting_key>
 ## OBS Recording Output Config
 
 :::important
+
 Your recording output configuration must match the settings below. Failing to do so may result in failed uploads or excessive use of bandwidth or resource credits.
+
 :::
 
 - Output mode: **Advanced**

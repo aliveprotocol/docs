@@ -21,7 +21,9 @@ In addition to the .ts hashes published on-chain, API nodes also looks for .ts h
 ## Live chat
 
 :::caution
+
 The specifications for live chat on Alive is in **draft** and not final.
+
 :::
 
 Live chat happens completely off-chain through AliveDB. Streamers may choose to publish the live chat archive on-chain after the stream ends as an IPFS hash or Skylink of the plain text containing the chat messages.
