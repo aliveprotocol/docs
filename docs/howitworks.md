@@ -27,3 +27,19 @@ The specifications for live chat on Alive is in **draft** and not final.
 :::
 
 Live chat happens completely off-chain through AliveDB. Streamers may choose to publish the live chat archive on-chain after the stream ends as an IPFS hash or Skylink of the plain text containing the chat messages.
+
+Due to the way GUN middlewares work, live chat participants must request chat access by writing some signature data in GunDB. On the streamer side, AliveDB listens to new requests and adds them to the approved participants list in the database if the signature is valid and the participant is not blacklisted in any way. This process is usually done automatically.
+
+Each message in the live chat will be timestamped and signed with their private key of their associated on-chain account. Every viewer listening for new live chat messages will verify the signatures of each message.
+
+If using Keychain browser extensions, signature requests must be approved within 30 seconds of the request creation timestamp.
+
+### Moderation
+
+Streamers will have the full control over chat moderation, such as issuing bans or blacklisting specific chat messages. These actions are performed within the GunDB user namespace, the same namespace where stream chunks are published off-chain.
+
+### Chat archives
+
+If possible on the specific platform, streamers may obtain a plain-text dump of the live chat containing the details of all chat messages in a live stream. Streamers will verify the signatures for each message before adding the dump to IPFS/Skynet.
+
+The streamer then publishes the hash of the dump to the on-chain video metadata, which will be used by stream archive viewers to fetch all messages posted during the stream to be shown on frontends.
