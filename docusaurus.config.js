@@ -57,6 +57,10 @@ module.exports = {
               to: 'docs/',
             },
             {
+              label: 'How It Works',
+              to: 'docs/howitworks'
+            },
+            {
               label: 'For Streamers',
               to: 'docs/modes',
             },
@@ -90,6 +94,14 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/aliveprotocol',
             },
+            {
+              label: 'Vote for Avalon witness',
+              href: 'https://d.tube/#!/election'
+            },
+            {
+              label: 'Vote for Hive witness',
+              href: 'https://hivesigner.com/sign/account-witness-vote?witness=techcoderx&approve=1'
+            }
           ],
         },
       ],
