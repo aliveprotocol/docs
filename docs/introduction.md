@@ -10,8 +10,6 @@ Alive is currently **pre-alpha**, hence any part of the specifications or the do
 
 :::
 
-## Hello World!
-
 Welcome to the official documentation for Alive, a multi-chain decentralized live streaming protocol using HLS (HTTP Live Streaming), the video streaming communications protocol that is currently widely used by many websites to deliver video content.
 
 Alive uses IPFS and Skynet as backend storage for HLS stream content and GunDB P2P database as an off-chain streams caching layer and live chat. It is interoperable with Hive and Avalon networks as an immutable store for live video streams and live chat archive, It has been designed such that it can be integrated by any video DApp that wishes to incorporate decentralized live streams with ease.

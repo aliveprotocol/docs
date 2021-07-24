@@ -11,6 +11,9 @@ module.exports = {
     locales: ['en'],
   },
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark'
+    },
     navbar: {
       title: 'Alive',
       logo: {
