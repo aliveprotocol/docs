@@ -9,7 +9,7 @@ Alive Protocol streams can be broadcasted to the world in a variety of ways. Eac
 
 Suitable for **majority** of streamers who streams short events (less than 24 hours).
 
-Off-chain cached streams still transact with the blockchain but less frequently. The most recent stream hashes are stored in AliveDB off-chain P2P database. Every 5 minutes, Alive daemon pulls all stream hashes that are recently broadcasted to AliveDB before they expire and puts them together in a single hash list file that also gets added to IPFS/Skynet. The resulting file hash is then broadcasted to the blockchain.
+Off-chain cached streams still transact with the blockchain but less frequently. The most recent stream hashes are stored in AliveDB off-chain P2P database. Every 1 to 5 minutes, Alive daemon pulls all stream hashes that are recently broadcasted to AliveDB before they expire and puts them together in a single hash list file that also gets added to IPFS/Skynet. The resulting file hash is then broadcasted to the blockchain.
 
 This method minimizes the amount of data being broadcasted on-chain hence minimizes bandwidth or resource credits requirements.
 

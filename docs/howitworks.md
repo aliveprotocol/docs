@@ -10,8 +10,8 @@ A typical Alive Protocol stream lifecycle works as follows:
 1. The streamer creates the post that links to the Alive Protocol stream on the blockchain of their choice.
 2. The streamer configures the Alive Protocol stream by publishing their AliveDB public key to the blockchain.
 3. The streamer begins recording the stream using the HLS format into a specifed folder.
-4. Alive Protocol daemon periodically scans for new 10-second .ts segments recorded by the streamer in the previous step, adds that .ts segment file to IPFS/Skynet and publishes the hash to AliveDB.
-5. Every 5 minutes, the newly-published segment hashes are bundled into a text file called a chunk, which is then added to IPFS/Skynet. The hash of that file gets broadcasted into the blockchain.
+4. Alive daemon periodically scans for new 10-second .ts segments recorded by the streamer in the previous step, adds that .ts segment file to IPFS/Skynet and publishes the hash to AliveDB.
+5. Every 1 to 5 minutes, the newly-published segment hashes are bundled into a text file called a chunk, which is then added to IPFS/Skynet. The hash of that file gets broadcasted into the blockchain.
 6. After the livestream, the streamer stops the recording. The daemon then bundles the remaining segment hashes and publishes them like in the previous step.
 7. The streamer broadcasts a transaction to the blockchain to indicate that the stream is complete.
 
@@ -23,28 +23,6 @@ In addition to the .ts hashes published on-chain, API nodes also looks for .ts h
 
 ## Live chat
 
-Live chat happens completely off-chain through AliveDB. Streamers may choose to publish the live chat archive on-chain after the stream ends as an IPFS hash or Skylink of the plain text containing the chat messages.
+Live chat happens completely off-chain. The DApp (or interface) may choose to use the live chat communication within AliveDB or another solution on their own that is completely separate from Alive Protocol.
 
-Due to the way GUN middlewares work, live chat participants must request chat access by writing some signature data in GunDB. On the streamer side, AliveDB listens to new requests and adds them to the approved participants list in the database if the signature is valid and the participant is not blacklisted in any way. This process is usually done automatically.
-
-### Signatures
-
-Each message in the live chat will be timestamped and signed with their private key of their associated on-chain account. Every viewer listening for new live chat messages will verify the signatures of each message.
-
-If using Keychain browser extensions, signature requests must be approved within 30 seconds of the request creation timestamp.
-
-### Moderation
-
-Streamers will have the full control over chat moderation, such as issuing bans or blacklisting specific chat messages. These actions are performed within the GunDB user namespace, under the same or different AliveDB user account.
-
-### Chat archives
-
-If possible on the specific platform, streamers may obtain a plain-text dump of the live chat containing the details of all chat messages in a live stream. Streamers will verify the signatures for each message before adding the dump to IPFS/Skynet.
-
-The streamer then publishes the hash of the dump to the on-chain video metadata, which will be used by stream archive viewers to fetch all messages posted during the stream to be shown on frontends.
-
-### Demo
-
-A sample webpage has been included within [AliveDB](https://github.com/aliveprotocol/AliveDB/tree/master/livechatexample) to demonstrate the browser implementation of the live chat.
-
-You can experiment by starting a local [AliveDB peer](packages/alivedb.md) and opening the webpage in different browsers.
+Depending on the DApp, streamers may choose to publish the live chat archive on-chain after the stream ends as an IPFS hash or Skylink of the plain text containing the chat messages.
