@@ -1,4 +1,4 @@
-# Alive Docs
+# Alive Protocol Docs
 
 Landing page and documentation of Alive Protocol. Created using [Docusaurus 2](https://v2.docusaurus.io).
 

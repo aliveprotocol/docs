@@ -3,7 +3,7 @@ id: modes
 title: Stream Modes
 ---
 
-Alive streams can be broadcasted to the world in a variety of ways. Each of them may provide different advantages and disadvantages, so it is important to choose the right one for your best streaming experience.
+Alive Protocol streams can be broadcasted to the world in a variety of ways. Each of them may provide different advantages and disadvantages, so it is important to choose the right one for your best streaming experience.
 
 ### On-chain (with off-chain cache)
 

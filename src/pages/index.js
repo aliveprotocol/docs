@@ -18,7 +18,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.1.desc',
       description: 'Description for homepage highlight #1',
-      message: 'Alive is built as a live streaming protocol that is actually decentralized which any video DApp can take advantage of. Choose your favorite DApp and file sharing protocol to stream to.'
+      message: 'Alive Protocol is built as a live streaming protocol that is actually decentralized which any video DApp can take advantage of. Choose your favorite DApp and file sharing protocol to stream to.'
     })
   },
   {
@@ -31,7 +31,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.2.desc',
       description: 'Description for homepage highlight #2',
-      message: 'Stream your content and interact with your viewers without worrying about arbitrary censorship as Alive does not the authority to ban anyone on the immutable blockchains.'
+      message: 'Stream your content and interact with your viewers without worrying about arbitrary censorship as Alive Protocol does not the authority to ban anyone on the immutable blockchains.'
     })
   },
   {
@@ -44,7 +44,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.3.desc',
       description: 'Description for homepage highlight #3',
-      message: 'Alive is not limited to the scalability of a single blockchain as it is designed to be built on multiple blockchains. Your video streams are spread out across different IPFS/Skynet nodes around the world too.'
+      message: 'Alive Protocol is not limited to the scalability of a single blockchain as it is designed to be built on multiple blockchains. Your video streams are spread out across different IPFS/Skynet nodes around the world too.'
     })
   },
   {
@@ -57,7 +57,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.4.desc',
       description: 'Description for homepage highlight #4',
-      message: 'Just missed a stream from your favourite streamers? Stream archives of ended on-chain Alive streams are made available instantly so that you can watch it immediately.'
+      message: 'Just missed a stream from your favourite streamers? Stream archives of ended on-chain Alive Protocol streams are made available instantly so that you can watch it immediately.'
     })
   },
   {
@@ -70,7 +70,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.5.desc',
       description: 'Description for homepage highlight #5',
-      message: 'The decentralization of Alive extends to live chat such that streamers and streamer-approved moderators are the ones that have moderation powers to keep the chat clean.'
+      message: 'The decentralization of Alive Protocol extends to live chat such that streamers and streamer-approved moderators are the ones that have moderation powers to keep the chat clean.'
     })
   },
   {
@@ -83,7 +83,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.6.desc',
       description: 'Description for homepage highlight #6',
-      message: 'Alive uses HLS to deliver streams, the industry leading communication protocol used by many video players. All it takes to deliver Alive streams is just using m3u8 playlists provided by Alive-enabled API nodes.'
+      message: 'Alive Protocol uses HLS to deliver streams, the industry leading communication protocol used by many video players. All it takes to deliver Alive streams is just using m3u8 playlists provided by Alive-enabled API nodes.'
     })
   }
 ]

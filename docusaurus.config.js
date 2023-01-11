@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Alive',
+  title: 'Alive Protocol',
   tagline: 'Decentralized live streaming protocol on IPFS and Skynet',
   url: 'https://aliveprotocol.com',
   baseUrl: '/',
@@ -15,9 +15,9 @@ module.exports = {
       defaultMode: 'dark'
     },
     navbar: {
-      title: 'Alive',
+      title: 'Alive Protocol',
       logo: {
-        alt: 'Alive Logo',
+        alt: 'Alive Protocol Logo',
         src: 'img/logo.svg',
       },
       items: [
