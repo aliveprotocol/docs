@@ -1,20 +1,18 @@
 ---
-id: getstarted
-title: Get Started
+id: stream-on-hive-cli
+title: Stream on Hive (CLI)
 ---
 
-:::note
-
-The information contained in this page is incomplete and will be updated as development progresses.
-
+:::info
+Useful for development purposes on testnet/mirrornet and programmatic usage.
 :::
 
 You can stream through Alive Protocol using CLI during the testing phrase as the UI for streamers is currently being developed. If you wish to perticipate in the early testing, please contact `techcoderx#7481` on Discord for further information.
 
-The general procedure of creating a stream are as follows:
+## General Procedure
 
-1. Setup a Hive/Avalon development testnet.
-2. If using Hive testnet, setup HAlive and connect to your local testnet in config.
+1. Setup a Hive development testnet with `sql_serializer` plugin.
+2. Setup HAlive and connect to the HAF database of your local testnet.
 3. Setup Alive-CLI and install AliveDB.
 4. Setup an IPFS node.
 5. Start Alive daemon.

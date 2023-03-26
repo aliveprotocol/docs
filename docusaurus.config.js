@@ -64,8 +64,8 @@ module.exports = {
               to: 'docs/howitworks'
             },
             {
-              label: 'For Streamers',
-              to: 'docs/modes',
+              label: 'Get Started',
+              to: 'docs/getstarted/stream-on-hive-cli',
             },
           ],
         },

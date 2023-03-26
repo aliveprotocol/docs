@@ -5,9 +5,7 @@ slug: /
 ---
 
 :::caution
-
 Alive is currently **pre-alpha**, hence any part of the specifications or the documentation may change significantly.
-
 :::
 
 Welcome to the official documentation for Alive Protocol, an on-chain HLS (HTTP Live Streaming) video streaming protocol.

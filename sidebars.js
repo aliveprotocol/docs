@@ -1,7 +1,8 @@
 module.exports = {
   someSidebar: {
-    "Alive Protocol": ['introduction','howitworks','limitations','getstarted','alivedb-chat'],
-    "For Streamers": ['modes'],
-    "Packages": ['packages/alivecli','packages/alivedb','packages/halive']
+    "Alive Protocol": ['introduction','howitworks','limitations','alivedb-chat'],
+    "Get Started": ['getstarted/stream-on-hive-cli'],
+    "Packages": ['packages/alivecli','packages/alivedb','packages/halive'],
+    "Develop": ['develop/hive-testnet-setup']
   }
 }
