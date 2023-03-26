@@ -77,12 +77,12 @@ module.exports = {
               href: 'https://peakd.com/@aliveprotocol',
             },
             {
-              label: 'DTube',
-              href: 'https://d.tube/#!/c/aliveprotocol',
+              label: 'Sting Chat',
+              href: 'https://chat.peakd.com/t/hive-169420/0',
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/Sc4utKr',
+              href: 'https://discord.gg/ZWj5NqaBeF',
             }
           ]
         },
@@ -96,10 +96,6 @@ module.exports = {
             {
               label: 'GitHub',
               href: 'https://github.com/aliveprotocol',
-            },
-            {
-              label: 'Vote for Avalon witness',
-              href: 'https://d.tube/#!/election'
             },
             {
               label: 'Vote for Hive witness',
