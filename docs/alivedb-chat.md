@@ -27,4 +27,4 @@ The streamer then publishes the hash of the dump to the on-chain video metadata,
 
 A sample webpage has been included within [AliveDB](https://github.com/aliveprotocol/AliveDB/tree/master/livechatexample) to demonstrate the browser implementation of the live chat.
 
-You can experiment by starting a local [AliveDB peer](packages/alivedb.md) and opening the webpage in different browsers.
+You can experiment by starting a local [AliveDB peer](/docs/alivedb) and opening the webpage in different browsers.
