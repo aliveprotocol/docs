@@ -12,8 +12,8 @@ You can stream through Alive Protocol using CLI during the testing phrase as the
 ## General Procedure
 
 1. Setup a Hive development testnet with `sql_serializer` plugin ([guide](/docs/develop/hive-testnet-setup)).
-2. Setup HAlive and connect to the HAF database of your local testnet.
-3. Setup Alive-CLI and install AliveDB.
-4. Setup an IPFS node.
+2. Setup [HAlive](/docs/halive) and connect to the HAF database of your local testnet.
+3. Setup [Alive-CLI](/docs/alivecli) and install [AliveDB](/docs/alivedb).
+4. Setup an [IPFS node](https://ipfs.tech/#install).
 5. Start Alive daemon.
 6. Setup OBS to record HLS to `~/.alive/record_here` and start recording.
