@@ -44,7 +44,7 @@ const features = [
     description: translate({
       id: 'homepage.highlight.3.desc',
       description: 'Description for homepage highlight #3',
-      message: 'Alive Protocol is not limited to the scalability of a single blockchain as it is designed to be built on multiple blockchains. Your video streams are spread out across different IPFS/Skynet nodes around the world too.'
+      message: 'Alive Protocol is not limited to the scalability of a single blockchain as it is designed to be built on multiple blockchains. Your video streams are spread out across different IPFS nodes around the world too.'
     })
   },
   {

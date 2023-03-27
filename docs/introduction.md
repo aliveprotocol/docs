@@ -18,7 +18,7 @@ Alive Protocol can be extended to index other blockchains as well when desired.
 
 1. **Network Agnostic**
 
-    Alive Protocol uses two leading decentralized file sharing protocols which are IPFS and Skynet, which enables streamers to select their favourite protocol to push their streams to. They also choose their preferred DApp to broadcast their streams to.
+    Alive Protocol uses decentralized file sharing protocols such as IPFS (extensible to other protocols) and blockchains such as Hive, which enables streamers to select their favourite protocol to push their streams to. They also choose their preferred DApp to broadcast their streams to.
 
 2. **Developer Friendly**
 

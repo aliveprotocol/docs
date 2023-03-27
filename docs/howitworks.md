@@ -10,8 +10,8 @@ A typical Alive Protocol stream lifecycle works as follows:
 1. The streamer creates the post that links to the Alive Protocol stream on Hive.
 2. The streamer configures the Alive Protocol stream by publishing their AliveDB public key to Hive.
 3. The streamer begins recording the stream using the HLS format into a specifed folder.
-4. Alive daemon periodically scans for new 10-second .ts segments recorded by the streamer in the previous step, adds that .ts segment file to IPFS/Skynet and publishes the hash to AliveDB.
-5. Every 1 to 5 minutes, the newly-published segment hashes are bundled into a CSV file called a chunk, which is then added to IPFS/Skynet. The hash of that file gets broadcasted into the blockchain.
+4. Alive daemon periodically scans for new 10-second .ts segments recorded by the streamer in the previous step, adds that .ts segment file to IPFS and publishes the hash to AliveDB.
+5. Every 1 to 5 minutes, the newly-published segment hashes are bundled into a CSV file called a chunk, which is then added to IPFS. The hash of that file gets broadcasted into the blockchain.
 6. After the livestream, the streamer stops the recording. The daemon then bundles the remaining segment hashes and publishes them like in the previous step.
 7. The streamer broadcasts a transaction to the blockchain to indicate that the stream is complete.
 8. The stream archive will be made available immediately after marking the stream as complete.

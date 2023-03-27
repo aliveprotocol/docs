@@ -9,7 +9,7 @@ These limitations currently apply to v0.x of the protocol. It may change in futu
 
 ## Stream Propagation Performance
 
-The performance of Alive Protocol streams are limited to the capability of the underlying file-sharing protocols, such as IPFS and Skynet. It is important for IPFS/Skynet nodes used to propagate Alive Protocol related files to peer closely with gateways used to access the live streams for the best performance.
+The performance of Alive Protocol streams are limited to the capability of the underlying file-sharing protocols such as IPFS. It is important for IPFS nodes used to propagate Alive Protocol related files to peer closely with gateways used to access the live streams for the best performance.
 
 ## GunDB
 

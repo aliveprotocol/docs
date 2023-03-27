@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Alive Protocol',
-  tagline: 'Decentralized live streaming protocol on IPFS and Skynet',
+  tagline: 'Decentralized live streaming protocol on Hive and IPFS',
   url: 'https://aliveprotocol.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',

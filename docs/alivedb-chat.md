@@ -19,7 +19,7 @@ Streamers will have the full control over chat moderation, such as issuing bans 
 
 ## Chat archives
 
-If possible on the specific platform, streamers may obtain a plain-text dump of the live chat containing the details of all chat messages in a live stream. Streamers will verify the signatures for each message before adding the dump to IPFS/Skynet.
+If possible on the specific platform, streamers may obtain a plain-text dump of the live chat containing the details of all chat messages in a live stream. Streamers will verify the signatures for each message before adding the dump to IPFS.
 
 The streamer then publishes the hash of the dump to the on-chain video metadata, which will be used by stream archive viewers to fetch all messages posted during the stream to be shown on frontends.
 
