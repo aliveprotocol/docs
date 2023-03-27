@@ -1,6 +1,7 @@
 ---
 id: streamer-sdk
 title: Streamer SDK
+description: Usage documentation for Alive Protocol streamer SDK
 ---
 
 The [Alive-CLI](/docs/alivecli) core daemon can be imported into any Python applications, enabling the said application to stream through Alive Protocol.

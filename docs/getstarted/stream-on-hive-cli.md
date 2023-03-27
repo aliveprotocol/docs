@@ -1,6 +1,7 @@
 ---
 id: stream-on-hive-cli
 title: Stream on Hive (CLI)
+description: Stream to Alive Protocol on Hive using CLI
 ---
 
 :::info

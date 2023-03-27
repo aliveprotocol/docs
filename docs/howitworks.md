@@ -1,6 +1,7 @@
 ---
 id: howitworks
 title: How It Works
+description: The inner-workings of Alive Protocol
 ---
 
 ## Creating Video Streams

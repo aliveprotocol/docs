@@ -1,6 +1,7 @@
 ---
 id: alivedb-chat
 title: AliveDB Chat
+description: P2P live chat on AliveDB for Alive Protocol
 ---
 
 AliveDB encapsulates a sample p2p live chat implementation using GunDB that works on blockchain accounts across multiple networks.

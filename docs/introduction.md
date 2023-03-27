@@ -1,6 +1,8 @@
 ---
 id: introduction
 title: Introduction
+description: Introduction to Alive Protocol
+keywords: [alive protocol, hls, hive, haf, ipfs]
 slug: /
 ---
 

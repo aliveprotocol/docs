@@ -1,6 +1,7 @@
 ---
 id: hive-testnet-setup
 title: Hive Testnet Setup
+description: HAF-enabled Hive development testnet setup guide
 ---
 
 Setup a private HAF-enabled Hive development testnet to test Alive Protocol without creating additional blockchain bloat on the mainnet. Most of this guide should be very similar to the [mainnet HAF node setup guide](https://peakd.com/haf/@techcoderx/techcoderxcom-node-is-haf-ready-and-how-you-can-run-one-too) but with testnet-related build flags.

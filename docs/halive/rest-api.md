@@ -1,6 +1,7 @@
 ---
 id: rest-api
 title: REST API
+description: REST API reference for HAlive
 ---
 
 REST API reference for [HAlive](/docs/halive). APIs are available in both **PostgREST** and **Express** APIs unless specified otherwise.

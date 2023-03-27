@@ -1,6 +1,7 @@
 ---
 id: rest-api
 title: REST API
+description: REST API reference for AliveDB
 ---
 
 REST API reference for [AliveDB](/docs/alivedb).

@@ -1,6 +1,7 @@
 ---
 id: alivedb
 title: AliveDB
+description: Off-chain GunDB database for Alive streams and live chat messages.
 ---
 
 Off-chain GunDB database for Alive streams and live chat messages.

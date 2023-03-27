@@ -1,6 +1,7 @@
 ---
 id: alivecli
 title: Alive-CLI
+description: Core Alive daemon and CLI tool for publishing HLS streams to decentralized networks.
 ---
 
 Core Alive daemon and CLI tool for publishing HLS streams to decentralized networks.

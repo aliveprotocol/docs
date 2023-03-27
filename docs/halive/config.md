@@ -1,6 +1,7 @@
 ---
 id: config
 title: Configuration
+description: Configuration guide for HAlive
 ---
 
 HAlive may be configured using command-line arguments, a `.env` file followed by environment variables in that priority order.

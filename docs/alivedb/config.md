@@ -1,6 +1,7 @@
 ---
 id: config
 title: Configuration
+description: Configuration guide for AliveDB
 ---
 
 AliveDB can be configured using command line args or env vars. Command line args takes precedence over env vars. Alternative to env vars, a `.env` file may also be specified.

@@ -1,6 +1,7 @@
 ---
 id: limitations
 title: Limitations
+description: Alive Protocol limitations
 ---
 
 :::caution
