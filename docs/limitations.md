@@ -14,7 +14,7 @@ The performance of Alive Protocol streams are limited to the capability of the u
 
 ## GunDB
 
-Alive Protocol currently uses GunDB for improving scalability and reducing blockchain bloat. These scaling solutions may contain underlying issues which can affect the usability of Alive Protocols.
+Alive Protocol currently uses GunDB for improving scalability and reducing blockchain bloat. These scaling solutions may contain underlying issues which can affect the usability of Alive Protocol.
 
 However, it is possible (but **not recommended**) to bypass AliveDB and stream directly on-chain. This publishes every HLS segment hashes on-chain as they are available (approximately every 10 seconds). To do this with Alive-CLI, specify `--batch_interval 0`.
 

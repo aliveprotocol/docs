@@ -10,9 +10,9 @@ slug: /
 Alive is currently **pre-alpha**, hence any part of the specifications or the documentation may change significantly.
 :::
 
-Welcome to the official documentation for Alive Protocol, an on-chain HLS (HTTP Live Streaming) video streaming protocol.
+Welcome to the official documentation for Alive Protocol, an on-chain HLS (HTTP Live Streaming) live streaming protocol.
 
-Alive Protocol uses IPFS (or Skynet) as the backend storage for HLS stream content and GunDB P2P database as an off-chain live caching layer. The on-chain data store lives on Hive, featuring [single block finality](https://peakd.com/hive-139531/@blocktrades/one-block-irreversibility-for-delegated-proof-of-stake-dpos) for 3-second block confirmation times and [Hive Application Framework (HAF)](https://gitlab.syncad.com/hive/haf) that indexes data related to Alive Protocol.
+Alive Protocol uses IPFS as the backend storage for HLS stream content and GunDB P2P database as an off-chain live caching layer. The on-chain data store lives on Hive, featuring [single block finality](https://peakd.com/hive-139531/@blocktrades/one-block-irreversibility-for-delegated-proof-of-stake-dpos) for 3-second block confirmation times and [Hive Application Framework (HAF)](https://gitlab.syncad.com/hive/haf) that indexes data related to Alive Protocol.
 
 Alive Protocol can be extended to index other blockchains as well when desired.
 
