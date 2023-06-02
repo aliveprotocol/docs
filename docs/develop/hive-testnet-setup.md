@@ -66,7 +66,29 @@ mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_HIVE_TESTNET=ON -GNinja ..
 ninja
+```
+
+## Install HAF extensions
+
+### With Ninja
+```bash
 sudo ninja install
+```
+
+### Manually
+
+:::info
+Useful when build server is not the node running the testnet.
+:::
+
+```bash
+# In `build` folder
+sudo cp lib/libhfm-* /usr/lib/postgresql/14/lib
+sudo cp extensions/hive_fork_manager/* /usr/share/postgresql/14/extension
+
+# Fix permissions
+sudo chmod 644 /usr/lib/postgresql/14/lib/libhfm-*
+sudo chmod 644 /usr/share/postgresql/14/extension/hive_fork_manager*
 ```
 
 ## Setup HAF db
