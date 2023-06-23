@@ -18,6 +18,8 @@ Alive Protocol currently uses GunDB for improving scalability and reducing block
 
 However, it is possible (but **not recommended**) to bypass AliveDB and stream directly on-chain. This publishes every HLS segment hashes on-chain as they are available (approximately every 10 seconds). To do this with Alive-CLI, specify `--batch_interval 0`.
 
+In the future, it may be possible to stream exclusively to scaling solutions such as [Vaultec Smart Chain (VSC)](https://vsc.eco), eliminating the need to push streams initially to GunDB then to broadcast stream chunks to Hive L1.
+
 ## Link Rot
 
 Alive Protocol only serves as a way to publish video live streams and a way to retrieve them as HLS playlists. It is up to individual DApps or streamers to ensure that past video streams remain playable by keeping the HLS segments and chunks accessible through the underlying file-sharing protocols. Alive Protocol does not guarantee any availability of past video streams.

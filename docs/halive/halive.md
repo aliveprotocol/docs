@@ -13,7 +13,11 @@ HAF-based Alive Protocol streams indexer and API server. Indexes Hive from a sta
 
 A locally-running IPFS daemon is recommended for faster chunk fetching.
 
-## Setup
+## Database Setup
+
+:::info
+Applicable to both standalone and Docker installations.
+:::
 
 ### PostgreSQL Roles
 ```sql
@@ -23,32 +27,75 @@ GRANT CREATE ON DATABASE block_log_testnet TO halive_app;
 GRANT halive_user TO halive_app;
 ```
 
-### PostgREST Installation
-```bash
-./scripts/postgrest_install.sh
-```
-
 ### PostgREST API methods
 ```bash
 psql -f src/sql/create_apis.sql block_log
 ```
 
-## Sync
+## Standalone Installation
+
+:::note
+This section describes the steps for a standalone installation, i.e., setting up the application without using Docker containers. If you prefer to use Docker, please refer to the [Docker Installation](#docker-installation) section.
+:::
+
+### Clone and Install
+```bash
+git clone https://github.com/aliveprotocol/HAlive
+cd HAlive
+npm i
+./scripts/postgrest_install.sh
+```
+
+Then configure HAlive [here](/docs/halive/config).
+
+### Usage
+
+#### Start HAF indexer
 ```bash
 npm start
 ```
 
-## Start PostgREST server
+#### Start PostgREST server
 ```bash
 ./scripts/postgrest_start.sh postgres://halive_app:<halive_app_password>@localhost:5432/block_log <server_port>
 ```
 Replace `<halive_app_password>` with the password of `halive_app` role.
 
-## Start Express server
+#### Start Express server
 ```bash
 npm run server
 ```
 Listens to `http://127.0.0.1:3010` unless specified otherwise in [config](/docs/halive/config).
+
+## Docker Installation
+
+### Build Docker Images
+```bash
+git clone https://github.com/aliveprotocol/HAlive
+cd HAlive
+docker build -t halive_sync --target halive_sync .
+docker build -t halive_server --target halive_server .
+```
+
+Then configure HAlive [here](/docs/halive/config) using the `.env` file.
+
+### Run Containers
+
+#### Start HAF indexer
+```bash
+docker run -d --rm --network host --name halive-sync --env-file .env halive_sync
+```
+
+#### Start Express server
+```bash
+docker run -d --rm --network host --name halive-server --env-file .env halive_server
+```
+
+#### Start PostgREST server
+```bash
+./scripts/postgrest_docker_start.sh postgres://halive_app:<halive_app_password>@localhost:5432/block_log <server_port>
+```
+Replace `<halive_app_password>` with the password of `halive_app` role.
 
 ## Uninstall
 
