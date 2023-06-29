@@ -17,7 +17,7 @@ This may also be useful for developers to quickly start a test stream by using t
 AliveDB can be installed in the system from the SDK. By default, the repository is cloned into `~/.alive`.
 
 ```python
-from alivedb import alivedb_install
+from alivecli.alivedb import alivedb_install
 
 alivedb_install(alivedir='/path/to/new/alivedb/installation')
 ```
@@ -27,7 +27,7 @@ alivedb_install(alivedir='/path/to/new/alivedb/installation')
 The AliveDB instance may be invoked locally as follows:
 
 ```python
-from alivedb import AliveDB
+from alivecli.alivedb import AliveDB
 
 alivedb_instance = AliveDB(
     alivedir='/path/to/alivedb/installation',
@@ -80,7 +80,7 @@ print('Public Key: ' + alivedb_instance.userpub) # AliveDB Public Key
 ### Initialization
 
 ```python
-from stream_hls import AliveDaemon, AliveInstance
+from alivecli.stream_hls import AliveDaemon, AliveInstance
 from signal import signal, SIGINT
 
 alive_instance = AliveInstance(
@@ -115,7 +115,7 @@ alive_daemon.stop_worker(False)
 ## Putting it together
 
 ```python
-from stream_hls import AliveDaemon, AliveInstance
+from alivecli.stream_hls import AliveDaemon, AliveInstance
 from alivedb import AliveDB
 from signal import signal, SIGINT
 
