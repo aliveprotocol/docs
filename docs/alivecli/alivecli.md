@@ -10,7 +10,7 @@ This is the main daemon that is used by streamers to upload .ts segments of a lo
 
 ## Pre-requisites
 
-Python 3.7+, `pip3` package manager and AliveDB dependencies are required.
+Python 3.8+ with `pip3` package manager are required. [AliveDB dependencies](/docs/alivedb/#dependencies) (and ideally [Git](https://git-scm.com/downloads)) are required to install and run AliveDB within the daemon.
 
 Additionally, the following packages are required for its dependency packages to be installed successfully:
 

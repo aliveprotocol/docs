@@ -34,3 +34,24 @@ git submodule add https://github.com/aliveprotocol/AliveDB [submodule_dir]
 ```
 npm start
 ```
+
+## Running in Docker
+
+### Build image
+```bash
+docker build -t alivedb .
+```
+Then configure AliveDB using the `.env` file [here](/docs/alivedb/config).
+
+:::caution
+Do **not** set the `ALIVEDB_DATA_DIR` variable as this is handled by docker. Set the data directory on the host system in the bind mount through `docker run` below.
+:::
+
+### Run container
+```bash
+docker run --rm -d -v /path/to/data/dir:/app/data --network host --env-file .env --name alivedb alivedb
+```
+
+:::note
+Replace `/path/to/data/dir` with the data directory on the host system.
+:::
