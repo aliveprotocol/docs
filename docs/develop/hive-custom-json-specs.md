@@ -4,7 +4,7 @@ title: Hive Custom JSON Specs
 description: Custom JSON specification for Alive Protocol transactions on Hive
 ---
 
-This page lists the custom JSON specifications for Alive Protocol on-chain transactions on Hive.
+This page outlines the custom JSON specifications for Alive Protocol on-chain transactions on Hive.
 
 ## Custom JSON Fields
 
