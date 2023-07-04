@@ -5,6 +5,6 @@ module.exports = {
     "Alive-CLI": ['alivecli/alivecli'],
     "AliveDB": ['alivedb/alivedb','alivedb/config','alivedb/rest-api','alivedb/sig-auth'],
     "HAlive": ['halive/halive','halive/config','halive/rest-api'],
-    "Develop": ['develop/hive-testnet-setup','develop/streamer-sdk']
+    "Develop": ['develop/hive-testnet-setup','develop/hive-custom-json-specs','develop/streamer-sdk']
   }
 }
