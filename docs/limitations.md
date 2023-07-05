@@ -27,3 +27,15 @@ Alive Protocol only serves as a way to publish video live streams and a way to r
 ## Short-Term Streams Only
 
 Alive Protocol streams are on-chain, hence it is only practically feasible for short-term video streams (less than a few hours).
+
+## Not A Platform
+
+Alive Protocol itself only outlines the structure of on-chain video streams stored on decentralized file-sharing protocols such as IPFS, along with implementations of creating, indexing and viewing livestreams associated with the protocol.
+
+It does not provide a standalone feature complete platform that can replace centralized live streaming platforms. It is targeted towards existing video DApps on the relevant networks that may be currently relying on centralized infrastructure for live streaming to integrate with the protocol.
+
+However, Alive Protocol may be used standalone to stream on-chain which is then linked to websites operated by the streamer or Hive posts. This approach may be useful for avoiding any fees that the video DApp may impose on rewards.
+
+## Monetization
+
+Adding to the above, Alive Protocol does not handle monetization of live streams in any manner. It is something for video DApps integrating the protocol (or streamers themselves) to consider.

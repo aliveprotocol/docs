@@ -4,6 +4,10 @@ title: AliveDB Chat
 description: P2P live chat on AliveDB for Alive Protocol
 ---
 
+:::caution
+The chat functionality is considered **experimental** and may be removed from AliveDB in favour of production-ready solutions.
+:::
+
 AliveDB encapsulates a sample p2p live chat implementation using GunDB that works on blockchain accounts across multiple networks.
 
 Due to the way GUN middlewares work, live chat participants must request chat access by writing some signature data in GunDB. On the streamer side, AliveDB listens to new requests and adds them to the approved participants list in the database if the signature is valid and the participant is not blacklisted by the moderators in any way. This process is usually done automatically.

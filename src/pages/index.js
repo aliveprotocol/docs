@@ -12,39 +12,39 @@ const features = [
     title: translate({
       id: 'homepage.highlight.1.title',
       description: 'Title for homepage highlight #1',
-      message: 'Stream the way you want'
+      message: 'Developer Friendly'
     }),
-    imageUrl: 'img/undraw_choose.svg',
+    imageUrl: 'img/undraw_code_inspection.svg',
     description: translate({
       id: 'homepage.highlight.1.desc',
       description: 'Description for homepage highlight #1',
-      message: 'Alive Protocol is built as a live streaming protocol that is actually decentralized which any video DApp can take advantage of. Choose your favorite DApp and file sharing protocol to stream to.'
+      message: 'Alive Protocol uses HLS to deliver live streams, the industry leading streaming protocol used by many video players. All it takes to deliver Alive Protocol streams is just using m3u8 playlists provided by HAlive API nodes.'
     })
   },
   {
     title: translate({
       id: 'homepage.highlight.2.title',
       description: 'Title for homepage highlight #2',
-      message: 'Communicate freely'
+      message: 'Censorship Resistance'
     }),
     imageUrl: 'img/undraw_video_influencer.svg',
     description: translate({
       id: 'homepage.highlight.2.desc',
       description: 'Description for homepage highlight #2',
-      message: 'Stream your content and interact with your viewers without worrying about arbitrary censorship as Alive Protocol does not the authority to ban anyone on the immutable blockchains.'
+      message: 'Neither the creators nor developers of Alive Protocol or its dependencies can prevent anyone from streaming through Alive Protocol. You own the private keys that enables you to publish HLS segments of your stream on-chain.'
     })
   },
   {
     title: translate({
       id: 'homepage.highlight.3.title',
       description: 'Title for homepage highlight #3',
-      message: 'Highly scalable'
+      message: 'Live Immutability'
     }),
-    imageUrl: 'img/undraw_connected_world.svg',
+    imageUrl: 'img/undraw_push_stream.svg',
     description: translate({
       id: 'homepage.highlight.3.desc',
       description: 'Description for homepage highlight #3',
-      message: 'Alive Protocol is not limited to the scalability of a single blockchain as it is designed to be built on multiple blockchains. Your video streams are spread out across different IPFS nodes around the world too.'
+      message: 'HLS segments are continously pushed on-chain during the live stream. Useful for important live events that you may want to ensure that it cannot be tampered or removed at the very moment the event is recorded live.'
     })
   },
   {
@@ -57,41 +57,29 @@ const features = [
     description: translate({
       id: 'homepage.highlight.4.desc',
       description: 'Description for homepage highlight #4',
-      message: 'Just missed a stream from your favourite streamers? Stream archives of ended on-chain Alive Protocol streams are made available instantly so that you can watch it immediately.'
-    })
+      message: 'Just missed a stream? Stream archives are made available instantly so that you can watch it immediately. No waiting for additional encoding to take place.'
+    }),
+    colOffset: 2
   },
   {
     title: translate({
       id: 'homepage.highlight.5.title',
       description: 'Title for homepage highlight #5',
-      message: 'Moderate your own chat'
+      message: 'Horizontally scalable'
     }),
-    imageUrl: 'img/undraw_manage_chats.svg',
+    imageUrl: 'img/undraw_connected_world.svg',
     description: translate({
       id: 'homepage.highlight.5.desc',
       description: 'Description for homepage highlight #5',
-      message: 'The decentralization of Alive Protocol extends to live chat such that streamers and streamer-approved moderators are the ones that have moderation powers to keep the chat clean.'
+      message: 'Alive Protocol streams are accessible through multiple IPFS gateways as well as multiple HAlive API nodes run by different operators.'
     })
   },
-  {
-    title: translate({
-      id: 'homepage.highlight.6.title',
-      description: 'Title for homepage highlight #6',
-      message: 'Developer friendly'
-    }),
-    imageUrl: 'img/undraw_code_inspection.svg',
-    description: translate({
-      id: 'homepage.highlight.6.desc',
-      description: 'Description for homepage highlight #6',
-      message: 'Alive Protocol uses HLS to deliver streams, the industry leading communication protocol used by many video players. All it takes to deliver Alive streams is just using m3u8 playlists provided by Alive-enabled API nodes.'
-    })
-  }
 ]
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, colOffset}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx(`col col--4 ${colOffset ? 'col--offset-'+colOffset : ''}`, styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
