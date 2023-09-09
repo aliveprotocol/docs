@@ -61,6 +61,9 @@ curl -s -H 'Content-Type: application/json' http://localhost:3010/get_stream_chu
 ```
 
 Example response:
+:::info
+Chunks with `len` of `null` indicates that it is a batched chunk.
+:::
 ```json
 {
     "id": 4,
