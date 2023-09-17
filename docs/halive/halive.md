@@ -43,6 +43,7 @@ This section describes the steps for a standalone installation, i.e., setting up
 git clone https://github.com/aliveprotocol/HAlive
 cd HAlive
 npm i
+npm run compile
 ./scripts/postgrest_install.sh
 ```
 
@@ -55,6 +56,10 @@ Then configure HAlive [here](/docs/halive/config).
 npm start
 ```
 
+:::info
+Run `npm run dev` instead to start a ts-node dev server without compiling after making any changes.
+:::
+
 #### Start PostgREST server
 ```bash
 ./scripts/postgrest_start.sh postgres://halive_app:<halive_app_password>@localhost:5432/block_log <server_port>
@@ -66,6 +71,10 @@ Replace `<halive_app_password>` with the password of `halive_app` role.
 npm run server
 ```
 Listens to `http://127.0.0.1:3010` unless specified otherwise in [config](/docs/halive/config).
+
+:::info
+Run `npm run dev-server` instead to start a ts-node dev server without compiling after making any changes.
+:::
 
 ## Docker Installation
 
