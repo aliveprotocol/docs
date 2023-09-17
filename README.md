@@ -35,7 +35,7 @@ ipd build/
 
 ### Using [Fleek](https://fleek.co):
 
-Build command: `curl -fsSL https://get.pnpm.io/install.sh | sh -; pnpm i; pnpm run build;`
+Build command: `corepack enable; corepack prepare pnpm@latest --activate; pnpm i; pnpm run build;`
 Publish directory: `build`
 
 Docusaurus does not support hash routing, hence it is required to access the webpage with base32 CID v1 hash on a subdomain. To convert CID v0 hashes:

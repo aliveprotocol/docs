@@ -209,3 +209,12 @@ http://[::]:8080/ipfs/QmRpCjUXHjrWXjp4bMXf6LN1H9GNyKy8iVNECdZC9epEZH
 http://[::]:8080/ipfs/QmXW6EqwU2zAx8s1npE8aBFTei1yixgSYAa6rjuWyotKEU
 #EXT-X-ENDLIST
 ```
+
+Request query parameters:
+
+|Query|Description|Default|
+|-|-|-|
+|quality|Stream resolution of the playlist|src|
+|gw|IPFS gateway to fetch HLS segments from|*halive server specific*|
+|fetchtimeout|Stream chunk fetch timeout (in seconds)|*halive server specific*|
+|l1only|Skip fetching latest chunks from AliveDB (1 for true)|0|
