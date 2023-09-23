@@ -94,6 +94,7 @@ Copy the provided `.env.example` file to `.env` and configure the daemon.
 |`ALIVE_STREAMER_KEY`|Streamer private posting key|
 |`ALIVE_STREAM_LINK`|Stream link|
 |`ALIVE_BATCH_INTERVAL`|On-chain batch publish interval (in seconds)|
+|`ALIVE_PURGE_FILES`|Whether to purge successfully uploaded files (`1` for true)|
 
 ### Run container
 ```bash
@@ -109,7 +110,7 @@ Your recording output configuration must match the settings below. Failing to do
 - Output mode: **Advanced**
 - Type: **Custom output (FFmpeg)**
 - FFmpeg output type: **Output to File**
-- File path: `~/.alivedb/record_here`
+- File path: `~/.alivedb/record_here` (or the recording path specified otherwise)
 - Container format: **hls**
 - Muxer settings: **hls_time=10**
 - Keyframe interval: Set this to 10x your framerate. For example, if you're recording at 30fps, set this value to 300.
