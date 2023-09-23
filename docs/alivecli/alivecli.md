@@ -12,7 +12,13 @@ This is the main daemon that is used by streamers to upload .ts segments of a lo
 
 Python 3.8+ with `pip3` package manager are required. [AliveDB dependencies](/docs/alivedb/#dependencies) (and ideally [Git](https://git-scm.com/downloads)) are required to install and run AliveDB within the daemon.
 
-Additionally, the following packages are required for its dependency packages to be installed successfully:
+## Dependency Installation
+
+:::note
+Applicable for standalone installation outside Docker.
+:::
+
+The following packages are required for its dependency packages to be installed successfully:
 
 ### Debian/Ubuntu
 ```bash
@@ -63,42 +69,35 @@ source .venv/bin/activate
 ### Install in virtual environment
 ```bash
 pip3 install . --use-pep517
-alivedb_install
 ```
 
-The default data directory is `~/.alive` where all Alive working files will be stored.
+For CLI usage details, read the CLI usage guide [here](/docs/alivecli/cli-guide).
 
-## Starting a new stream
+## Running in Docker
 
-Begin from step 3 if streaming directly on-chain.
-
-1. If not already, create an AliveDB user account.
+### Build image
 ```bash
-alivedb_usercreate <new_alivedb_password>
+docker build -t alivecli .
 ```
 
-2. Publish your AliveDB public key to your new stream.
+### Configure .env file
+
+Copy the provided `.env.example` file to `.env` and configure the daemon.
+
+|Env Var|Description|
+|-|-|
+|`ALIVEDB_ENDPOINT`|AliveDB external endpoint|
+|`ALIVE_UPLOAD_ENDPOINT`|IPFS API for uploading stream chunks and segments|
+|`ALIVE_BLOCKCHAIN_API`|Hive API node|
+|`ALIVE_HALIVE_API`|HAlive API node|
+|`ALIVE_STREAMER_USERNAME`|Streamer username|
+|`ALIVE_STREAMER_KEY`|Streamer private posting key|
+|`ALIVE_STREAM_LINK`|Stream link|
+|`ALIVE_BATCH_INTERVAL`|On-chain batch publish interval (in seconds)|
+
+### Run container
 ```bash
-alive_configure hive <hive_api_node> <link> <alivedb_pubkey> <username> <posting_key>
-```
-
-3. Setup OBS recording output settings according to the config below.
-
-4. Start the Alive daemon. To get CLI usage info:
-```bash
-alivecli --help
-```
-
-5. Start recording in OBS.
-
-## Ending a stream
-
-1. Stop recording in OBS.
-2. Let the final segment to complete processing, then hit `Ctrl+C` on Alive daemon.
-3. Let the world know that the stream has ended so that the stream archive will be seekable.
-
-```bash
-alive_end hive <hive_api_node> <link> <username> <posting_key>
+docker run -d --rm -v /path/to/record/folder:/app/record -v /path/to/data/dir:/app/data --network host --env-file .env --name alivecli alivecli
 ```
 
 ## OBS Recording Output Config
